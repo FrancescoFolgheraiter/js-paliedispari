@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Palindromite</title>
 
     <!--fonts-->
 
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,26 +16,47 @@
 <body>
     <!--INIZIO HEADER-->
     <header>
-        <div class="container">
-            HEADER
+        <div class="container text-center mb-5">
+            <h1>
+                Palindromite
+            </h1>
+            <h2>
+                Inserisci una parola e vedi se è palindroma!
+            </h2>
         </div>
     </header>
     <!--FINE HEADER--> 
 
     <!--INIZIO MAIN-->
     <main>
-        <div class="container">
-            MAIN 
+        <div class="container text-center">
+            <form action="" method="get">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label class="me-3" for="">
+                            Inserisci la parola
+                        </label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <button type="button">
+                            Verifica
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <div class="result">
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
     <!--FINE MAIN-->
 
-    <!--INIZIO FOOTER-->
-    <footer>
-        <div class="container">
-            FOOTER
-        </div>
-    </footer>
-    <!--FINE FOOTER-->
+    <!--js boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--my scripts-->
+    <script type="text/javascript" src="./js/scripts.js"></script>
 </body>
 </html>
