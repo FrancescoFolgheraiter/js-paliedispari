@@ -19,3 +19,11 @@ SVOLGIMENTO
     -restituisco 1 per dispari;
 6) dichiaro chi ha vinto
 */
+
+//input dati
+const gioca = document.querySelector("button");
+
+gioca.addEventListener("click", function(){
+    alert("funziona")
+})
+
