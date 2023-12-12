@@ -15,8 +15,8 @@
 
 <body>
     <!--INIZIO HEADER-->
-    <header>
-        <div class="container">
+    <header class="mb-5">
+        <div class="container text-center">
             <h1>
                 Pari e dispari
             </h1>
@@ -29,7 +29,46 @@
 
     <!--INIZIO MAIN-->
     <main>
+        <div class="container text-center">
+            <form action="" method="get">
+                <div class="row">
+                    <div  class="col">
+                        <label for="user-number">
+                            Seleziona un numero da 1 a 5
+                        </label>
+                        <select name="" id="user-number">
+                            <option value="0" disabled>seleziona un numero</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="even">
+                            Seleziona pari o dispari
+                        </label>
+                        <select name="" id="even">
+                            <option value="" disabled>seleziona pari o dispari</option>
+                            <option value="">pari</option>
+                            <option value="">dispari</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <button class="gioca">
+                            Gioca
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <div id="result">
 
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
     </main>
     <!--FINE MAIN-->
 
