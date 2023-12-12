@@ -24,6 +24,35 @@ SVOLGIMENTO
 const gioca = document.querySelector("button");
 
 gioca.addEventListener("click", function(){
-    alert("funziona")
+    //input dati
+    const numeroUtente = parseInt(document.getElementById("user-number").value);
+    const evenOdd = document.getElementById("even-odd").value;
+    const numeroPc = generateRandom(1,5);
+
+    //calcolo somma
+    const sum = numeroUtente + numeroPc;
+    //richiamo funzione di controllo even-odd;
+    const risultato = ifEven(sum); 
+    
+    //controllo se il risultato corrisponde ha ciò che ha inserito l'utente
+    if (risultato == evenOdd){
+        document.getElementById("result").innerHTML = "Numero generato: "+ numeroPc +"; Numero scelto: " + numeroUtente + "; Selezione pari o dispari: " + evenOdd;
+        alert("hai vinto")
+    }
+    else{
+        document.getElementById("result").innerHTML = "Numero generato: "+ numeroPc +"; Numero scelto: " + numeroUtente + "; Selezione pari o dispari: " + evenOdd;
+        alert("hai perso")
+    }
 })
+//funzione di controllo se è pari
+function ifEven (n){
+    if (n % 2 == 0){
+        return("pari");
+    }
+    return("dispari");   
+}
+//funzione generatrice di numeri random
+function generateRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
 
