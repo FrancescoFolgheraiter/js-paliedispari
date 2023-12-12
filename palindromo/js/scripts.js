@@ -17,10 +17,12 @@ verifica.addEventListener("click", function(){
     const word = document.querySelector("input").value;
     
     if (word == reverse(word)){
-        alert("la parola è palindroma")
+        alert("la parola è palindroma");
+        document.querySelector(".result").innerHTML="la parola " + word + " è palindroma";
     }
     else{
         alert("la parola non è palindroma")
+        document.querySelector(".result").innerHTML="la parola" + word + " non è palindroma";
     }
 })
 //funzione per creare una variabile con la parola in argomento al contrario
@@ -29,7 +31,7 @@ function reverse(string){
     for (let i = string.length - 1; i >=0; i --) {
         reverseWord += string[i];
     }
-    console.log("la parola al contrario è :", reverseWord)
     return(reverseWord)
 }
+
 
